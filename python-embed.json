@@ -1,0 +1,43 @@
+{
+    "version": "3.8.2",
+    "homepage": "https://www.python.org/",
+    "description": "A programming language that lets you work quickly and integrate systems more effectively.",
+    "license": "Python-2.0",
+    "architecture": {
+        "64bit": {
+            "url": [
+                "https://www.python.org/ftp/python/$version/python-$version-embed-amd64.zip",
+                "https://bootstrap.pypa.io/get-pip.py"
+            ],
+            "hash": [
+                "2927a3a6d0fe1f6e047a86059220aeda374eed23113b9ef5355acb8452d56453",
+                "421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e"
+            ]
+        },
+        "32bit": {
+            "url": [
+                "https://www.python.org/ftp/python/$version/python-$version-embed-win32.zip",
+                "https://bootstrap.pypa.io/get-pip.py"
+            ],
+            "hash": [
+                "3fefc09b640bb6bd1d91f9c3a63e314fb19d29603c1194db528b58efafbcbadb",
+                "421ac1d44c0cf9730a088e337867d974b91bdce4ea2636099275071878cc189e"
+            ]
+        }
+    },
+    "post_install": [
+        "(Get-Content \"$dir\\python38._pth\").replace(\"#import site\",\"import site\") | Set-Content \"$dir\\python38._pth\"",
+        "python \"$dir\\get-pip.py\""
+    ],
+    "bin": [
+        "python.exe",
+        "pythonw.exe",
+        [
+            "python.exe",
+            "python3"
+        ]
+    ],
+    "env_add_path": [
+        "Scripts"
+    ]
+}
