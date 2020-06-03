@@ -1,7 +1,9 @@
 {
     "version": "2.0.2",
-    "homepage": "",
+    "homepage": "https://visualvm.github.io",
     "description": "VisualVM is a visual tool integrating commandline JDK tools and lightweight profiling capabilities. Designed for both development and production time use.",
-    "license": "GPL",
-    "url": "https://github.com/visualvm/visualvm.src/releases/download/2.0.2/visualvm_202.zip"
+    "license": "GPL-2.0",
+    "url": "https://github.com/visualvm/visualvm.src/releases/download/2.0.2/visualvm_202.zip",
+    "extract_dir": "visualvm_202",
+    "bin": "visualvm.exe"
 }
