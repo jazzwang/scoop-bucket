@@ -3,5 +3,11 @@
     "homepage": "http://lftp.yar.ru/",
     "description": "LFTP is a sophisticated file transfer program supporting a number of network protocols (ftp, http, sftp, fish, torrent).",
     "license": "GPL-3.0",
-    "url": "https://lftp.nwgat.ninja/lftp-4.7.7/lftp-4.7.7.win64-openssl.zip"
+    "url": "https://lftp.nwgat.ninja/lftp-4.7.7/lftp-4.7.7.win64-openssl.zip",
+    "bin": [
+        [
+            "bin\\lftp.exe",
+            "lftp"
+        ]
+    ]
 }
