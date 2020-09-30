@@ -4,6 +4,7 @@
     "description": "cwRsync is a packaging of Rsync for Windows. You can use cwRsync for fast remote file backup and synchronization.",
     "license": "GPL-2.0",
     "url": "https://itefix.net/dl/free-software/cwrsync_6.2.0_x64_free.zip",
+    "extract_dir": "cwrsync_6.2.0_x64_free",
     "bin": [
         [
             "bin\\rsync.exe",
