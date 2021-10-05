@@ -3,12 +3,11 @@
     "description": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
     "homepage": "https://github.com/tj/git-extras",
     "license": "MIT",
-    "url": "https://github.com/tj/git-extras/archive/$version.zip",
-    "extract_dir": "git-extras-$version",
-    "post_install": "install.cmd %GIT_INSTALL_ROOT%",
-    "checkver": "github",
-    "autoupdate": {
-        "url": "https://github.com/tj/git-extras/archive/$version.zip",
-        "extract_dir": "git-extras-$version"
-    }
+    "url": "https://github.com/tj/git-extras/archive/6.3.0.zip",
+    "extract_dir": "git-extras-6.3.0",
+    "post_install": [
+        "pushd \"$dir\"",
+        "try { & \"$dir\\install.cmd\" } catch { info $_.Exception.Message }",
+        "popd"
+    ]
 }
