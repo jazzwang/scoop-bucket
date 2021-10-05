@@ -1,0 +1,13 @@
+{
+    "version": "6.3.0",
+    "description": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
+    "homepage": "https://github.com/tj/git-extras",
+    "license": "MIT",
+    "url": "https://github.com/tj/git-extras/archive/refs/tags/$version.zip",
+    "extract_dir": "git-extras-$version",
+    "checkver": "github",
+    "autoupdate": {
+        "url": "https://github.com/tj/git-extras/archive/refs/tags/$version.zip",
+        "extract_dir": "git-extras-$version"
+    }
+}
