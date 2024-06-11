@@ -4,7 +4,7 @@
     "homepage": "https://github.com/tj/git-extras",
     "license": "MIT",
     "url": "https://github.com/tj/git-extras/archive/refs/tags/7.2.0.zip",
-    "extract_dir": "git-extras-6.3.0",
+    "extract_dir": "git-extras-7.2.0",
     "post_install": [
         "pushd \"$dir\"",
         "try { & \"$dir\\install.cmd\" } catch { info $_.Exception.Message }",
