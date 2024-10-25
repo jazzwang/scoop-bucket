@@ -1,10 +1,11 @@
 {
     "version": "7.3.0",
+    "license": "MIT",
+    "extract_dir": "git-extras-7.3.0",
+    "url":  "https://github.com/tj/git-extras/archive/refs/tags/7.3.0.zip",
+    "depends":  "",
     "description": "GIT utilities -- repo summary, repl, changelog population, author commit percentages and more",
     "homepage": "https://github.com/tj/git-extras",
-    "license": "MIT",
-    "url": "https://codeload.github.com/tj/git-extras/zip/refs/tags/7.3.0",
-    "extract_dir": "git-extras-7.3.0",
     "post_install": [
         "pushd \"$dir\"",
         "try { & \"$dir\\install.cmd\" } catch { info $_.Exception.Message }",
