@@ -15,7 +15,7 @@
     ],
     "post_install": [
 	"pushd \"$dir\"",
-        "try { \"$dir\\install.cmd\" $env:GIT_INSTALL_ROOT } catch { info $_.Exception.Message }",
+        "cmd \c install.cmd $env:GIT_INSTALL_ROOT",
         "popd"
     ]
 }
